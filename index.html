@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotToDo</title>
+    <link rel="icon" type="image/png" sizes="180x180" href="/images/checklist.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+  
+    <script src="https://kit.fontawesome.com/afacf43eba.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="toDo.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-5">
+            <h1 class="mb-3"> Folarin's GotToDo</h1>
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="Search todo">
+            </form>
+        </header>
+
+        <!-- Display toDoList -->
+        <ul class="list-group todos mx-auto">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Wake up at 2:30
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Pray and read my Quran
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+             <li class="list-group-item d-flex justify-content-between align-items-center">
+                Apologize to my woman
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+             <li class="list-group-item d-flex justify-content-between align-items-center">
+                Drink Coffee
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+             <li class="list-group-item d-flex justify-content-between align-items-center">
+                Code
+                <i class="fa-solid fa-trash delete"></i>
+            </li>
+        </ul>
+
+        <!-- add to toDoList -->
+        <form class="addToDo my-3 text-center">
+            <label class="mb-2"> Add new toDo </label>
+            <input type="text" class="form-control m-auto addnewtodo" name="add">
+            <span></span>
+        </form>
+
+
+    </div>
+    <script src="toDo.js"></script>
+</body>
+</html>

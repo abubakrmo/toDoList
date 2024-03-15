@@ -1,0 +1,40 @@
+body{
+    background: #4fbce0;
+    color: white;
+    font-family: Nunito !important;
+}
+header h1{
+    font-weight: 900;
+}
+.container{
+    max-width: 400px;
+}
+input[type=text], input[type=text]:focus{
+    border: none;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white
+
+}
+.todos li{
+    background: #5FC3E4;
+    border: none;
+    color: white;
+}
+
+.delete{
+    cursor: pointer;
+}
+.filtered{
+    display: none !important;
+}
+form label{
+    font-weight: 900;
+}
+
+form span{
+    color: red;
+    font-size: 13px;
+    font-weight: 900;
+    
+}
