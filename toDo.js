@@ -15,9 +15,6 @@ const displaytoDo = userToDo =>{
     `
 }
 
-
-
-
 //Add toDo
 addtoDo.addEventListener('submit', e=>{
     e.preventDefault()
@@ -58,24 +55,10 @@ ul.addEventListener('click', e=>{
 //Search toDo
 
 const filteredtoDos = searchedtoDo => {
-    //Using Array method chaining
-
-    // Array.from(ul.children)
-    // .filter( todo => !todo.textContent.toLowerCase().includes(searchedtoDo))
-    // .forEach( todo => todo.classList.add('filtered'))
-
-    // Array.from(ul.children)
-    // .filter( todo => todo.textContent.toLowerCase().includes(searchedtoDo))
-    // .forEach( todo => todo.classList.remove('filtered'))
-
-    
-    //Using conditional statement
     const todoArray = Array.from(ul.children)
     todoArray.forEach(todo=>{
         if(!todo.textContent.toLowerCase().includes(searchedtoDo)){
-            // console.log(todo)
-            todo.classList.add('filtered')
-            
+            todo.classList.add('filtered')  
         }else{
             todo.classList.remove('filtered')
         }
